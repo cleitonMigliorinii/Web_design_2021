@@ -1,0 +1,84 @@
+:root {
+    --backgroundDefault: rgb(255, 255, 255);
+    --colorDefalt: #317a83;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: raleway, sans-serif;
+}
+
+.bodyMain{
+    background-color: var(--backgroundDefault);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.bodyMain > header{
+    flex: 2;
+    background-color: var(--backgroundDefault);;
+}
+
+.bodyMain > section{
+    flex: 12;
+}
+
+.sectionPageContent{
+    display: flex;
+}
+
+#pageContent1{
+    background-color: #ededed;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorDefalt);
+    font-size: 22px;
+}
+
+#pageContent1 > #headerPage2{
+    font-weight: 400;
+}
+
+
+#pageContent2{
+    background-color: var(--backgroundDefault);;
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+
+}
+
+#pageContent2 > .content{
+    width: 50%;
+    padding: 30px;
+    font-family:  'open sans', sans-serif;
+}
+
+.headerContent{
+    display: flex;
+}
+
+.headerContent > aside{
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.headerContent > nav {
+    flex: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 13px;
+    color: var(--colorDefalt);
+  
+   
+}

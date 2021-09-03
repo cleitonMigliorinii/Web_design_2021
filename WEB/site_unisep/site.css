@@ -1,0 +1,90 @@
+
+/*
+SELETORES 
+
+  * - TODOS OS ELEMENTOS
+  elemento - Representado no CSS pelo nome do elemento (EX. div)  (1...*) 
+  class - Representado no CSS pelo .  (1...* - GRUPO)
+  id   - Representado no CSS pelo #  (1...1) 
+  
+
+*/
+
+body {
+    margin: 0px;
+}
+
+#principal{
+  height: 100vh;
+  width: 100vw;
+}
+
+.header{
+  background-color: red;
+  height: 5vh;
+}
+
+.footer{
+  background-color: green;
+  height: 25vh;
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+.conteudo{
+  background-color: blue;
+  height: 70vh;
+  width: 80vw;
+  margin-left: 10vw;
+}
+
+#conteudo1{
+  height: 20%;
+  background-color: pink;
+}
+
+#conteudo_header_1{
+  height: 100%;
+  background-color: yellow;
+  width: 20%;
+  float: left;
+}
+
+#conteudo_header_2{
+  height: 100%;
+  background-color: rgb(255, 0, 140);
+  width: 50%;
+  float: left;
+}
+
+#conteudo_header_3{
+  height: 100%;
+  background-color: rgb(0, 255, 166);
+  width: 30%;
+  float: left;
+}
+
+#conteudo2{
+  height: 60%;
+  background-color: blueviolet;
+}
+
+#conteudo_corpo_1{
+  height: 100%;
+  width: 70%;
+  background-color: rgb(226, 168, 43);
+  float: left;
+}
+
+#conteudo_corpo_2{
+  height: 100%;
+  width: 30%;
+  background-color: rgb(150, 226, 43);
+  float: left;
+}
+
+#conteudo3{
+  height: 20%;
+  background-color: crimson;
+}
+
