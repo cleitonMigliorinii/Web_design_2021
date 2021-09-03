@@ -11,18 +11,19 @@
 
 .bodyMain{
     background-color: var(--backgroundDefault);
-    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .bodyMain > header{
-    flex: 2;
-    background-color: var(--backgroundDefault);;
+    height: 10vh;
+    background-color: var(--backgroundDefault);
+    position: fixed;
+    width: 100%;
 }
 
 .bodyMain > section{
-    flex: 12;
+    height: 90vh;
 }
 
 .sectionPageContent{
@@ -51,14 +52,27 @@
     display: flex;
     flex-wrap: wrap;
     align-content: space-around;
-    align-items: center;
+    align-items: baseline;
+    padding: 50px;
 
 }
 
 #pageContent2 > .content{
     width: 50%;
     padding: 30px;
-    font-family:  'open sans', sans-serif;
+    color: #666;
+}
+
+#pageContent2 > .content > header{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#pageContent2 >  .content > article{
+    padding-top: 25px;
+    text-align: center;
+    font-weight: 400;
 }
 
 .headerContent{
@@ -78,7 +92,60 @@
     align-items: center;
     justify-content: space-evenly;
     font-size: 13px;
-    color: var(--colorDefalt);
-  
-   
+
 }
+
+.headerContent > nav > div > a {
+    color: var(--colorDefalt) !important;
+    text-decoration: none;
+}
+
+.sectionPageContendSecond{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #286356;
+}
+
+.sectionPageContendSecond  h1{
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.sectionPageContendSecond h1 span{
+    font-weight: 300;
+}
+
+.sectionPageContendSecond > article{
+    padding: 20px;
+    width: 70%;
+}
+
+.sectionPageContendSecond > article > p{
+
+    color: white;
+    margin: 20px;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 22.4px;
+
+}
+
+.sectionPageContendSecond > footer > button{
+    background-color: #317a83;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+
+
+}
+
+.sectionPageContendSecond > footer > button:hover{
+    background-color: #163d41;
+    
+}
+
+
