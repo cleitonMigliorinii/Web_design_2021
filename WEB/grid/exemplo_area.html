@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grid Layout</title>
+
+    <style>
+        html,body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: rgb(29, 92, 29);
+        }
+
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 20vh 70vh 10vh;
+            grid-template-areas: 
+                               "h h"
+                               "m a"
+                               "f f";
+        }
+
+        header{
+            grid-area: h;
+            background-color: red;
+        }
+        main{
+            grid-area: m;
+            background-color: blue;
+        }
+        aside{
+            grid-area: a;
+            background-color: pink;
+        }
+        footer{
+            grid-area: f;
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section class="container">
+        <header></header>
+        <main></main>
+        <aside></aside>
+        <footer></footer>
+    </section>
+    
+</body>
+</html>
