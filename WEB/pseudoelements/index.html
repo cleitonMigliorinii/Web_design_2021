@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+
+    <style>
+        /*
+            selector::pseudo-element {  property: value;}
+            ::first-letter - pseudoelemento é usado para adicionar um estilo especial à primeira letra de um texto.
+            ::first-line  - pseudoelemento é usado para adicionar um estilo especial à primeira linha de um texto.
+            ::after - adiciona algo depois do elemento
+            ::before - adiciona algo antes do elemento 
+            ::selection
+            ::marker
+
+        */
+
+        p:first-child::first-letter{
+            color: red;
+            font-size: xx-large;
+        }
+
+        p::selection{
+            background-color: yellow;
+            color: green;
+        }
+
+        h3::first-line{
+            font-variant: small-caps;
+            color: green;
+        }
+
+        span::before{
+            content: "Before - ";
+        }
+
+        label::after{
+            content: " After";
+        }
+
+        li::marker{
+            color: purple;
+        }
+
+        a:hover{
+            position: relative;
+        }
+
+        a[title]:hover::before{
+            position: absolute;
+            content: attr(title);
+            padding: 10px 15px;
+            width: 150px;
+            left: 0;
+            top: 25px;
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <p>Os pseudoselementos devem utilizar :: para identificação visual !</p>
+    <p>Os pseudoselementos devem utilizar :: para identificação visual !</p>
+
+    <h3>
+        O ::first-line pseudoelemento é usado para adicionar <br/>
+         um estilo especial à primeira linha de um texto.
+    </h3>
+
+    <span>pseudoelemento usado para adicionar texto no começo...</span>
+    <label>pseudoelemento que adiciona no final eh : </label>
+
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+
+    <a title="Criando Tooltip via pseudo">Passe o mouse Aqui.</a>
+
+
+</body>
+</html>

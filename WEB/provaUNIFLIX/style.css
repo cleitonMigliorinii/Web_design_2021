@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Bebas Neue, 'Courier New', Courier, monospace;
+    background-color: #131111;
+    color: #fff;
+}
+
+h1,h2{
+    font-style: normal;
+    font-weight: normal;
+}
+
+main{
+    height: 100vh;
+}
+
+header{
+    background-color: #9B3333 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header>h1{
+    font-size: 56px;
+}
+
+header>h2{
+    font-size: 20px;
+}
+
+#primeiraSection{
+    max-height: 500px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000;
+}
+
+.parteUmSection{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parteUmSection>h2{
+    font-size: 42px;
+}
+.parteUmSection>p{
+    font-size: 24px;
+}
+.parteUmSection>button{
+    background-color: #9B3333;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    margin-top: 40px;
+}
+
+.parteDoisSection{
+    max-width: 60vw;
+}
+
+.parteDoisSection > img{
+    height: 100%;
+    width: 100%;
+}
+
+
+#segundaSection{
+    max-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+
+#segundaSection > .parteUmSection{
+    width: 50vw;
+    align-items: flex-start;
+}
+
+
+#terceiraSection{
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.episodiosHeader >h2{
+    font-size: 42px;
+}
+
+.episodiosHeader >p{
+    font-size: 24px;
+}
+
+.filmes{
+    display: flex;
+}
+
+.filmes > img{
+    width: calc(100% / 6);
+    padding: 7px;
+}
+
+#quartaSection{
+    max-height: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+#quartaSection > .parteUmSection{
+    width: 50vw;
+    align-items: flex-start;
+}
+
+#quartaSection > .parteDoisSection{
+    max-width: 50vw;
+}
+
+footer{
+    background-color: #9B3333 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0px;
+}
+
+footer > h1{
+    font-size: 56px;
+}

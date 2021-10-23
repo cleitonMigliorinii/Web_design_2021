@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Responsividade Texto</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+   <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root{
+            font-size: 10px;
+        }
+
+        section{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50vh;
+            padding: 15px;
+            font-size: 12px;
+        }
+
+        h1{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
+            /*font-size: calc(1em + 3vw);*/
+            font-size: 1rem;
+        }
+
+        /*
+          1rem = 10px
+          2rem = 20px
+        */
+
+        .primeiro{
+            background-color: rgb(220, 122, 122);
+        }
+        .segundo{
+            background-color: rgb(96, 96, 242);
+        }
+
+        .max{
+            font-size: max(60px, 10vw);
+        }
+
+        .min{
+            font-size: min(50px, 10vw);
+        }
+
+   </style>
+
+</head>
+<body> <!-- rem-->
+    
+    <section class="primeiro "> <!-- em -->
+        <h1 class="max">Texto reponsivo !!!!</h1>
+    </section>
+
+    <section class="segundo ">
+        <h1 class="min">Tornando o site legal!!!</h1>
+    </section>
+
+</body>
+</html>

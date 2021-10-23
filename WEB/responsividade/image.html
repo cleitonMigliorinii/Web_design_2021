@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem responsiva</title>
+
+    <style>
+        img{
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+    <picture>
+        <source media="(min-width: 900px)" srcset="assets/logo_1536x1536.png">
+        <source media="(max-width: 300px)" srcset="assets/logo256x256.jpg">
+
+        <img src="assets/logo_512x512.png" 
+        alt="Logo CBF2" aria-label="Logo CBF" 
+        title="Logo CBF">
+    </picture>
+
+    
+</body>
+</html>

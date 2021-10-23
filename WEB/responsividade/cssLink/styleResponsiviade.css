@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+h1, p{
+    color: #666;
+    padding: 15px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section div {
+    height: 50vh;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.bloco1{
+    background-color: rgb(247, 124, 124);
+}
+
+.bloco2{
+    background-color: rgb(159, 94, 220);
+}
+
+.bloco1 > h1, .bloco2 > h1{
+    color: white;
+}
+
+/*
+
+    320
+    768
+    1024
+
+*/
+
+@media screen and (max-width: 480px){
+
+    h1,p{
+        color: red;
+
+    }
+
+    section div {
+        width: 100%;
+    }
+
+    /*
+    .bloco1{
+        display: none;
+    }
+    */
+
+}
+
+@media screen and (min-width:480px) and (max-width: 720px){
+
+    h1,p{
+        color: blue;
+        
+    }
+}
